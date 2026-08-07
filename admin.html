@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>耗材二部 · 产品管理后台</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="admin-body">
+
+  <!-- 登录遮罩 -->
+  <div id="loginOverlay" class="login-overlay">
+    <div class="login-card">
+      <div class="brand-mark">耗材二部</div>
+      <h2>产品管理后台</h2>
+      <p class="login-sub">请输入管理密码以进入</p>
+      <input type="password" id="loginPass" placeholder="管理密码" autocomplete="off" />
+      <button id="loginBtn" class="btn btn-primary btn-block">进 入</button>
+      <p class="login-hint">默认密码：<code>admin</code>（进入后可在「设置」中修改）</p>
+      <p id="loginErr" class="login-err"></p>
+    </div>
+  </div>
+
+  <!-- 主框架 -->
+  <div id="adminApp" class="admin-app" hidden>
+    <header class="admin-header">
+      <div class="brand">
+        <span class="brand-mark">耗材二部</span>
+        <span class="brand-sub">产品管理后台</span>
+      </div>
+      <div class="admin-actions">
+        <a href="index.html" target="_blank" class="btn btn-ghost">预览官网 ↗</a>
+        <button id="btnExport" class="btn btn-ghost">导出 data.js</button>
+        <button id="btnPublish" class="btn btn-primary">发布到 GitHub</button>
+        <button id="btnLogout" class="btn btn-ghost">退出</button>
+      </div>
+    </header>
+
+    <nav class="admin-tabs">
+      <button class="admin-tab active" data-tab="products">机型管理</button>
+      <button class="admin-tab" data-tab="categories">品类管理</button>
+      <button class="admin-tab" data-tab="settings">设置</button>
+    </nav>
+
+    <main class="admin-main">
+      <!-- 机型管理 -->
+      <section id="tab-products" class="admin-panel">
+        <div class="panel-toolbar">
+          <input type="search" id="adminSearch" class="admin-search" placeholder="搜索型号 / 参数…" />
+          <select id="adminCatFilter" class="admin-select"><option value="">全部品类</option></select>
+          <button id="btnAddProduct" class="btn btn-primary">+ 新增机型</button>
+          <span id="productCount" class="count-badge"></span>
+        </div>
+        <div class="table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr><th class="col-img">图片</th><th>型号</th><th>品类</th><th>核心卖点</th><th class="col-ops">操作</th></tr>
+            </thead>
+            <tbody id="productTbody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 品类管理 -->
+      <section id="tab-categories" class="admin-panel" hidden>
+        <div class="panel-toolbar">
+          <button id="btnAddCategory" class="btn btn-primary">+ 新增品类</button>
+          <span id="catCount" class="count-badge"></span>
+        </div>
+        <div id="categoryList" class="cat-edit-list"></div>
+      </section>
+
+      <!-- 设置 -->
+      <section id="tab-settings" class="admin-panel" hidden>
+        <div class="settings-card">
+          <h3>登录密码</h3>
+          <div class="form-row">
+            <label>新密码</label>
+            <input type="password" id="setPass" placeholder="留空则不修改" />
+          </div>
+          <div class="form-row">
+            <label>确认密码</label>
+            <input type="password" id="setPass2" placeholder="再次输入" />
+          </div>
+
+          <h3>GitHub 发布配置</h3>
+          <p class="settings-note">发布时需要将改动写入你的仓库（GitHub Pages 源）。Token 仅在点击「发布」时临时使用，不会自动保存。</p>
+          <div class="form-row">
+            <label>仓库 (owner/repo)</label>
+            <input type="text" id="setRepo" placeholder="例如 wang/haocai-erbu" />
+          </div>
+          <div class="form-row">
+            <label>分支</label>
+            <input type="text" id="setBranch" value="main" />
+          </div>
+          <button id="btnSaveSettings" class="btn btn-primary">保存设置</button>
+          <p id="settingsMsg" class="settings-msg"></p>
+
+          <h3>数据重置</h3>
+          <p class="settings-note">将清空本地改动，恢复到官方网站默认值（不影响已发布的线上数据）。</p>
+          <button id="btnReset" class="btn btn-danger">恢复默认数据</button>
+        </div>
+      </section>
+    </main>
+
+    <div id="adminToast" class="admin-toast" hidden></div>
+  </div>
+
+  <!-- 机型编辑弹窗 -->
+  <div id="productModal" class="modal" hidden>
+    <div class="modal-box modal-lg">
+      <button class="modal-close" data-close="productModal">×</button>
+      <h3 id="productModalTitle">新增机型</h3>
+      <form id="productForm" class="admin-form">
+        <input type="hidden" id="pfId" />
+        <div class="form-grid">
+          <div class="form-row">
+            <label>所属品类 *</label>
+            <select id="pfCat" required></select>
+          </div>
+          <div class="form-row">
+            <label>型号 *</label>
+            <input type="text" id="pfModel" required placeholder="例如 XP600" />
+          </div>
+          <div class="form-row">
+            <label>型号(英文/副标题)</label>
+            <input type="text" id="pfModelEn" placeholder="可选" />
+          </div>
+          <div class="form-row">
+            <label>标签(逗号分隔)</label>
+            <input type="text" id="pfTags" placeholder="例如 热销, 入门" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label>产品图片</label>
+          <div class="img-upload">
+            <img id="pfImgPreview" class="img-preview" alt="预览" />
+            <div class="img-upload-ctrl">
+              <input type="file" id="pfImgFile" accept="image/*" />
+              <button type="button" id="pfImgClear" class="btn btn-ghost btn-sm">清除图片</button>
+              <p class="hint">上传图片会以 Base64 内嵌进数据，发布后无需单独传图。</p>
+            </div>
+            <input type="hidden" id="pfImg" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label>核心卖点 / 特点 / 购买建议</label>
+          <textarea id="pfFeature" rows="3" placeholder="一句话概括这款产品的优势"></textarea>
+        </div>
+
+        <div class="form-row">
+          <label>技术参数 <button type="button" id="pfAddSpec" class="btn btn-ghost btn-sm">+ 添加参数</button></label>
+          <div id="pfSpecs" class="spec-rows"></div>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn btn-ghost" data-close="productModal">取消</button>
+          <button type="submit" class="btn btn-primary">保存机型</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 品类编辑弹窗 -->
+  <div id="categoryModal" class="modal" hidden>
+    <div class="modal-box">
+      <button class="modal-close" data-close="categoryModal">×</button>
+      <h3 id="categoryModalTitle">编辑品类</h3>
+      <form id="categoryForm" class="admin-form">
+        <input type="hidden" id="cfId" />
+        <div class="form-row">
+          <label>品类名称 *</label>
+          <input type="text" id="cfName" required placeholder="例如 打印机" />
+        </div>
+        <div class="form-row">
+          <label>英文/副标题</label>
+          <input type="text" id="cfNameEn" placeholder="可选" />
+        </div>
+        <div class="form-row">
+          <label>技术简介</label>
+          <textarea id="cfTech" rows="3" placeholder="该品类的技术概述"></textarea>
+        </div>
+        <div class="form-row">
+          <label>技术要点(每行一条)</label>
+          <textarea id="cfTechPoints" rows="3" placeholder="例如 工业级打印头&#10;支持多种介质"></textarea>
+        </div>
+        <div class="form-row">
+          <label>代表图片</label>
+          <div class="img-upload">
+            <img id="cfImgPreview" class="img-preview" alt="预览" />
+            <div class="img-upload-ctrl">
+              <input type="file" id="cfImgFile" accept="image/*" />
+              <button type="button" id="cfImgClear" class="btn btn-ghost btn-sm">清除图片</button>
+            </div>
+            <input type="hidden" id="cfImg" />
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn btn-ghost" data-close="categoryModal">取消</button>
+          <button type="submit" class="btn btn-primary">保存品类</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 发布弹窗 -->
+  <div id="publishModal" class="modal" hidden>
+    <div class="modal-box">
+      <button class="modal-close" data-close="publishModal">×</button>
+      <h3>发布到 GitHub</h3>
+      <p class="settings-note">将把当前数据写入仓库的 <code>data/data.js</code>，从而更新线上官网。</p>
+      <form id="publishForm" class="admin-form">
+        <div class="form-row">
+          <label>GitHub Token *</label>
+          <input type="password" id="pubToken" placeholder="ghp_...（仅本次使用）" autocomplete="off" />
+        </div>
+        <div class="form-row">
+          <label>仓库 (owner/repo) *</label>
+          <input type="text" id="pubRepo" placeholder="例如 wang/haocai-erbu" />
+        </div>
+        <div class="form-row">
+          <label>分支</label>
+          <input type="text" id="pubBranch" value="main" />
+        </div>
+        <div id="publishStatus" class="publish-status"></div>
+        <div class="form-actions">
+          <button type="button" class="btn btn-ghost" data-close="publishModal">取消</button>
+          <button type="submit" class="btn btn-primary" id="pubSubmit">确认发布</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="data/data.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
