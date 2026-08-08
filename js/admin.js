@@ -75,8 +75,19 @@
   }
 
   /* ---------------- init ---------------- */
+  function ensureIds() {
+    // 给缺失 id 的品类/机型补上稳定 id，避免后台编辑/删除因 data-pid 为空而失效
+    DATA.categories.forEach((c, ci) => {
+      if (!c.id) c.id = "cat_" + ci;
+      c.products.forEach((p, pi) => {
+        if (!p.id) p.id = c.id + "_p" + pi;
+      });
+    });
+  }
+
   function initAdmin() {
     DATA = loadData();
+    ensureIds();
     populateCatSelects();
     renderProducts();
     renderCategories();
