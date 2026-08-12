@@ -105,7 +105,18 @@ window.PRODUCT_DATA = {
               "value": "新手入门款，成本低，体积小，建议打印数量10-80张/天的客户\nBeginner's entry-level model with low cost and small size, recommended for customers with a printing quantity of 10-80 sheets per day"
             }
           ],
-          "id": "打印机_p0"
+          "id": "打印机_p0",
+          "i18n": {
+            "ru": {
+              "feature": "Базовая модель для новичков: низкая цена, компактная, для клиентов с объёмом печати 10–80 листов/день"
+            },
+            "es": {
+              "feature": "Modelo de iniciación: bajo coste, tamaño pequeño, para clientes con 10–80 hojas/día"
+            },
+            "en": {
+              "feature": "Beginner's entry-level model with low cost and small size, recommended for customers with a printing quantity of 10-80 sheets per day"
+            }
+          }
         },
         {
           "model": "DTF-PDA3-2 A3 desk model 1600/xp600",
@@ -201,7 +212,18 @@ window.PRODUCT_DATA = {
               "value": "比正常A3体积更小，外观精美，配双喷头，建议预算有限，但是有需要打印50-150张/天的客户\nSmaller in size than industrial A3 printer, beautiful in appearance, equipped with dual nozzles. It is recommended that the budget is limited, but there are customers who need to print 50-150 sheets per day"
             }
           ],
-          "id": "打印机_p1"
+          "id": "打印机_p1",
+          "i18n": {
+            "ru": {
+              "feature": "Компактнее обычного A3, изящный вид, двойная головка; для клиентов с ограниченным бюджетом, но нуждающихся в 50–150 листах/день"
+            },
+            "es": {
+              "feature": "Más compacta que A3 estándar, acabado elegante, doble cabezal; para clientes con presupuesto ajustado pero 50–150 hojas/día"
+            },
+            "en": {
+              "feature": "Smaller in size than industrial A3 printer, beautiful in appearance, equipped with dual nozzles. It is recommended that the budget is limited, but there are customers who need to print 50-150 sheets per day"
+            }
+          }
         },
         {
           "model": "DTF-PA3SY A3 DTF Printer",
@@ -297,7 +319,18 @@ window.PRODUCT_DATA = {
               "value": "常规A3尺寸工业打印机，性价比款式，多种喷头板卡搭配可选，适合进阶客户，打印需求在60-180张/天的客户\nUsual A3 size industrial printer with cost-effective styles and a variety couple of nozzle/boards collocation, suitable for advanced customers with printing needs ranging from 60-180 sheets per day"
             }
           ],
-          "id": "打印机_p2"
+          "id": "打印机_p2",
+          "i18n": {
+            "ru": {
+              "feature": "Промышленный принтер стандартного A3, оптимальная цена, выбор головок/плат; для продвинутых клиентов, 60–180 листов/день"
+            },
+            "es": {
+              "feature": "Impresora industrial A3 estándar, gran relación calidad-precio, varias combinaciones de cabezales; para clientes avanzados, 60–180 hojas/día"
+            },
+            "en": {
+              "feature": "Usual A3 size industrial printer with cost-effective styles and a variety couple of nozzle/boards collocation, suitable for advanced customers with printing needs ranging from 60-180 sheets per day"
+            }
+          }
         },
         {
           "model": "DTF-PA2SY A2 DTF Printer",
@@ -393,7 +426,18 @@ window.PRODUCT_DATA = {
               "value": "同A3尺寸工业机，区别在打印宽幅更宽，适合需求打印更大logo的客户\nSame as usual A3 size industrial printer, differ at it is wider print size, which is suitable for customers who need to print larger logos"
             }
           ],
-          "id": "打印机_p3"
+          "id": "打印机_p3",
+          "i18n": {
+            "ru": {
+              "feature": "Тот же пром. A3, но шире печать; для клиентов, печатающих крупные логотипы"
+            },
+            "es": {
+              "feature": "Misma industrial A3, pero más ancha; para clientes que imprimen logos grandes"
+            },
+            "en": {
+              "feature": "Same as usual A3 size industrial printer, differ at it is wider print size, which is suitable for customers who need to print larger logos"
+            }
+          }
         },
         {
           "model": "NEW-A3 DTF Printer",
@@ -489,7 +533,8 @@ window.PRODUCT_DATA = {
               "value": ""
             }
           ],
-          "id": "打印机_p4"
+          "id": "打印机_p4",
+          "i18n": {}
         },
         {
           "model": "DTF-PA1 DTF Printer",
@@ -585,7 +630,18 @@ window.PRODUCT_DATA = {
               "value": "打印宽幅60cm，打印速度快，适合预算高，打印间大，高速打印打印300-1000张/天的打印工厂\nPrinting width of 60cm, fast printing speed, suitable for printing factories with high budgets, large printing rooms, and high-speed printing of 300-1000 sheets per day"
             }
           ],
-          "id": "打印机_p5"
+          "id": "打印机_p5",
+          "i18n": {
+            "ru": {
+              "feature": "Ширина печати 60 см, высокая скорость; для типографий с большим бюджетом и помещением, 300–1000 листов/день"
+            },
+            "es": {
+              "feature": "Ancho de impresión 60 cm, alta velocidad; para gráficas con gran presupuesto y espacio, 300–1000 hojas/día"
+            },
+            "en": {
+              "feature": "Printing width of 60cm, fast printing speed, suitable for printing factories with high budgets, large printing rooms, and high-speed printing of 300-1000 sheets per day"
+            }
+          }
         }
       ],
       "tech": "采用微压电喷头将水性颜料墨水直接喷印到 PET 转印膜上，经抖粉、固粉后随热压转印至面料。支持 XP600 / I3200 等多种喷头，覆盖 A3 到大幅面，是 DTF 工艺的核心输出设备。",
@@ -594,7 +650,35 @@ window.PRODUCT_DATA = {
         "白墨 + 彩墨同步输出",
         "A3 至大幅面多规格"
       ],
-      "image": "assets/images/ID_458AE7FF4F2144F09B949D0807F5A0D5.jpg"
+      "image": "assets/images/ID_458AE7FF4F2144F09B949D0807F5A0D5.jpg",
+      "i18n": {
+        "en": {
+          "tech": "Uses piezo printheads to directly jet water-based pigment ink onto PET transfer film; after powder shaking and curing, the design is heat-pressed onto fabric. Supports XP600 / I3200 and other heads, from A3 to large format — the core output device of the DTF process.",
+          "techPoints": [
+            "Piezo head direct-prints on PET film",
+            "White + color ink output simultaneously",
+            "A3 to large-format, multiple sizes"
+          ]
+        },
+        "ru": {
+          "name": "DTF-принтер",
+          "tech": "Использует пьезоэлектрические печатающие головки для прямой подачи водорастворимых пигментных чернил на ПЭТ-пленку для переноса; после встряхивания и закрепления порошка изображение термопрессуется на ткань. Поддерживает головки XP600 / I3200 и другие, от A3 до широкоформатных — основное печатающее устройство процесса DTF.",
+          "techPoints": [
+            "Пьезоголовка прямой печати на ПЭТ-пленку",
+            "Синхронный вывод белых и цветных чернил",
+            "От A3 до широкоформатных, несколько размеров"
+          ]
+        },
+        "es": {
+          "name": "Impresora DTF",
+          "tech": "Utiliza cabezales piezoeléctricos para proyectar directamente tinta pigmentada base agua sobre película PET de transferencia; tras sacudir y curar el polvo, el diseño se termoprensa sobre la tela. Admite cabezales XP600 / I3200 y otros, desde A3 hasta gran formato: el equipo de salida central del proceso DTF.",
+          "techPoints": [
+            "Cabezal piezo imprime directo sobre película PET",
+            "Salida simultánea de tinta blanca y de color",
+            "De A3 a gran formato, varios tamaños"
+          ]
+        }
+      }
     },
     {
       "id": "抖粉机",
@@ -668,7 +752,8 @@ window.PRODUCT_DATA = {
               "value": "45KG"
             }
           ],
-          "id": "抖粉机_p0"
+          "id": "抖粉机_p0",
+          "i18n": {}
         },
         {
           "model": "DTF-S02 迷你抖粉机A3 Shaker Oven（四灯管4 heater tubes）",
@@ -736,7 +821,8 @@ window.PRODUCT_DATA = {
               "value": "47KG"
             }
           ],
-          "id": "抖粉机_p1"
+          "id": "抖粉机_p1",
+          "i18n": {}
         },
         {
           "model": "DTF-迷你抖粉机A1（四灯管）",
@@ -804,7 +890,8 @@ window.PRODUCT_DATA = {
               "value": "120KG"
             }
           ],
-          "id": "抖粉机_p2"
+          "id": "抖粉机_p2",
+          "i18n": {}
         },
         {
           "model": "DTF-SV01 抖粉烘干一体机A3 （三灯管）",
@@ -872,7 +959,8 @@ window.PRODUCT_DATA = {
               "value": "70KG"
             }
           ],
-          "id": "抖粉机_p3"
+          "id": "抖粉机_p3",
+          "i18n": {}
         },
         {
           "model": "DTF-抖粉净化一体机A1（四灯管）",
@@ -940,7 +1028,8 @@ window.PRODUCT_DATA = {
               "value": "115KG"
             }
           ],
-          "id": "抖粉机_p4"
+          "id": "抖粉机_p4",
+          "i18n": {}
         },
         {
           "model": "DTF-抖粉机A1双头（网带按键款）",
@@ -1008,7 +1097,8 @@ window.PRODUCT_DATA = {
               "value": ""
             }
           ],
-          "id": "抖粉机_p5"
+          "id": "抖粉机_p5",
+          "i18n": {}
         },
         {
           "model": "DTF-抖粉机A1四头（网带按键款）",
@@ -1076,7 +1166,8 @@ window.PRODUCT_DATA = {
               "value": ""
             }
           ],
-          "id": "抖粉机_p6"
+          "id": "抖粉机_p6",
+          "i18n": {}
         },
         {
           "model": "DTF-SA1-2 A1抖粉机双头（网带按键款）",
@@ -1144,7 +1235,8 @@ window.PRODUCT_DATA = {
               "value": "200KG"
             }
           ],
-          "id": "抖粉机_p7"
+          "id": "抖粉机_p7",
+          "i18n": {}
         },
         {
           "model": "W650-C4撒粉烘干一体机",
@@ -1212,7 +1304,8 @@ window.PRODUCT_DATA = {
               "value": "260KG"
             }
           ],
-          "id": "抖粉机_p8"
+          "id": "抖粉机_p8",
+          "i18n": {}
         },
         {
           "model": "DTF-SA3L 抖粉机A3加长版",
@@ -1280,7 +1373,8 @@ window.PRODUCT_DATA = {
               "value": "45KG"
             }
           ],
-          "id": "抖粉机_p9"
+          "id": "抖粉机_p9",
+          "i18n": {}
         },
         {
           "model": "DTF-SA3 抖粉机A3",
@@ -1348,7 +1442,8 @@ window.PRODUCT_DATA = {
               "value": "45KG"
             }
           ],
-          "id": "抖粉机_p10"
+          "id": "抖粉机_p10",
+          "i18n": {}
         },
         {
           "model": "DTF-SA2 抖粉机A2",
@@ -1416,7 +1511,8 @@ window.PRODUCT_DATA = {
               "value": "55KG"
             }
           ],
-          "id": "抖粉机_p11"
+          "id": "抖粉机_p11",
+          "i18n": {}
         },
         {
           "model": "DTF-SA1-60 A1抖粉机双头",
@@ -1484,7 +1580,8 @@ window.PRODUCT_DATA = {
               "value": "150KG"
             }
           ],
-          "id": "抖粉机_p12"
+          "id": "抖粉机_p12",
+          "i18n": {}
         },
         {
           "model": "DTF-SA1-60V A1抖粉机双头（立式款）",
@@ -1552,7 +1649,8 @@ window.PRODUCT_DATA = {
               "value": "85KG"
             }
           ],
-          "id": "抖粉机_p13"
+          "id": "抖粉机_p13",
+          "i18n": {}
         },
         {
           "model": "DTF-SA1-4 A1抖粉机四头（网带按键款）",
@@ -1620,7 +1718,8 @@ window.PRODUCT_DATA = {
               "value": "300KG"
             }
           ],
-          "id": "抖粉机_p14"
+          "id": "抖粉机_p14",
+          "i18n": {}
         }
       ],
       "tech": "将热熔胶粉均匀抖撒在印有图案的 PET 膜上，经红外烘干、压实使粉末牢固附着，是 DTF 转印必不可少的前端配套设备。",
@@ -1629,7 +1728,35 @@ window.PRODUCT_DATA = {
         "红外烘干 + 压粉定型",
         "与 DTF 打印机配套"
       ],
-      "image": "assets/images/ID_A7485E8B85914137836F12938517133F.jpg"
+      "image": "assets/images/ID_A7485E8B85914137836F12938517133F.jpg",
+      "i18n": {
+        "en": {
+          "tech": "Evenly shakes hot-melt adhesive powder onto the printed PET film; infrared drying and pressing make the powder adhere firmly — an essential front-end device for DTF transfer.",
+          "techPoints": [
+            "Automatic even powder shaking/spreading",
+            "Infrared drying + powder pressing",
+            "Pairs with DTF printer"
+          ]
+        },
+        "ru": {
+          "name": "Встряхиватель порошка",
+          "tech": "Равномерно встряхивает клейкий порошок на напечатанную ПЭТ-пленку; ИК-сушка и прессование прочно закрепляют порошок — необходимое вспомогательное устройство для DTF-переноса.",
+          "techPoints": [
+            "Автоматическое равномерное встряхивание/нанесение порошка",
+            "ИК-сушка + прессование порошка",
+            "В паре с DTF-принтером"
+          ]
+        },
+        "es": {
+          "name": "Aplicador de polvo",
+          "tech": "Esparce uniformemente el polvo adhesivo termofusible sobre la película PET impresa; el secado por infrarrojos y el prensado fijan el polvo con firmeza: un equipo frontal imprescindible para la transferencia DTF.",
+          "techPoints": [
+            "Sacudido/esparcido automático y uniforme del polvo",
+            "Secado por infrarrojos + prensado del polvo",
+            "Complementa a la impresora DTF"
+          ]
+        }
+      }
     },
     {
       "id": "烤箱",
@@ -1695,7 +1822,8 @@ window.PRODUCT_DATA = {
               "value": "11.5KG"
             }
           ],
-          "id": "烤箱_p0"
+          "id": "烤箱_p0",
+          "i18n": {}
         },
         {
           "model": "A4烤箱(三灯管）",
@@ -1755,7 +1883,8 @@ window.PRODUCT_DATA = {
               "value": "25KG"
             }
           ],
-          "id": "烤箱_p1"
+          "id": "烤箱_p1",
+          "i18n": {}
         },
         {
           "model": "A3DTF抖粉烘干一体机",
@@ -1815,7 +1944,8 @@ window.PRODUCT_DATA = {
               "value": "26KG"
             }
           ],
-          "id": "烤箱_p2"
+          "id": "烤箱_p2",
+          "i18n": {}
         }
       ],
       "tech": "用于 DTF 转印膜撒粉后的固化定型，或热转印后的二次烘烤，确保胶层与图案牢固结合，温度均匀、操作简便。",
@@ -1824,7 +1954,35 @@ window.PRODUCT_DATA = {
         "适配多种尺寸转印膜",
         "操作简便易上手"
       ],
-      "image": "assets/images/ID_801C916AAB944C1DA7B792AE9A9680DA.jpg"
+      "image": "assets/images/ID_801C916AAB944C1DA7B792AE9A9680DA.jpg",
+      "i18n": {
+        "en": {
+          "tech": "Used to cure and set the powder after DTF film powdering, or for secondary baking after heat transfer, ensuring the adhesive bonds firmly with the design; even temperature, easy operation.",
+          "techPoints": [
+            "Constant-temp baking cures adhesive layer",
+            "Fits various transfer film sizes",
+            "Simple, easy to operate"
+          ]
+        },
+        "ru": {
+          "name": "Печь отверждения",
+          "tech": "Применяется для отверждения и фиксации порошка после нанесения на DTF-пленку или повторной выпечки после переноса, обеспечивая прочную связь клея с рисунком; ровная температура, простота.",
+          "techPoints": [
+            "Выпечка при пост. темп. закрепляет клей",
+            "Подходит для разных размеров пленки",
+            "Простое управление"
+          ]
+        },
+        "es": {
+          "name": "Horno de curado",
+          "tech": "Se usa para curar y fijar el polvo tras el espolvoreado de la película DTF, o para un segundo horneado tras la transferencia, asegurando que el adhesivo se una al diseño; temperatura uniforme, fácil de usar.",
+          "techPoints": [
+            "Horneado a temperatura constante cura la capa de adhesivo",
+            "Varios tamaños de película de transferencia",
+            "Operación sencilla"
+          ]
+        }
+      }
     },
     {
       "id": "空气净化器",
@@ -1906,7 +2064,8 @@ window.PRODUCT_DATA = {
               "value": "√"
             }
           ],
-          "id": "空气净化器_p0"
+          "id": "空气净化器_p0",
+          "i18n": {}
         },
         {
           "model": "APS小",
@@ -1982,7 +2141,8 @@ window.PRODUCT_DATA = {
               "value": "√"
             }
           ],
-          "id": "空气净化器_p1"
+          "id": "空气净化器_p1",
+          "i18n": {}
         },
         {
           "model": "APB大",
@@ -2058,7 +2218,8 @@ window.PRODUCT_DATA = {
               "value": "√"
             }
           ],
-          "id": "空气净化器_p2"
+          "id": "空气净化器_p2",
+          "i18n": {}
         },
         {
           "model": "升级版空气净化器小",
@@ -2134,7 +2295,8 @@ window.PRODUCT_DATA = {
               "value": "√"
             }
           ],
-          "id": "空气净化器_p3"
+          "id": "空气净化器_p3",
+          "i18n": {}
         },
         {
           "model": "升级版空气净化器中",
@@ -2210,7 +2372,8 @@ window.PRODUCT_DATA = {
               "value": "√"
             }
           ],
-          "id": "空气净化器_p4"
+          "id": "空气净化器_p4",
+          "i18n": {}
         },
         {
           "model": "升级版空气净化器大",
@@ -2286,7 +2449,8 @@ window.PRODUCT_DATA = {
               "value": "√"
             }
           ],
-          "id": "空气净化器_p5"
+          "id": "空气净化器_p5",
+          "i18n": {}
         }
       ],
       "tech": "针对打印、固化过程产生的废气与异味进行多级过滤净化，保障车间空气洁净与人员健康。",
@@ -2295,7 +2459,35 @@ window.PRODUCT_DATA = {
         "降低车间异味",
         "适配打印车间环境"
       ],
-      "image": "assets/images/ID_8C05D7432FAD455393803D0A43A7F564.jpg"
+      "image": "assets/images/ID_8C05D7432FAD455393803D0A43A7F564.jpg",
+      "i18n": {
+        "en": {
+          "tech": "Multi-stage filtration cleans the exhaust and odors generated during printing and curing, keeping workshop air clean and protecting health.",
+          "techPoints": [
+            "Multi-stage filtration purifies exhaust",
+            "Reduces workshop odor",
+            "Suited to printing workshops"
+          ]
+        },
+        "ru": {
+          "name": "Очиститель воздуха",
+          "tech": "Многоступенчатая фильтрация очищает выбросы и запахи при печати и отверждении, поддерживая чистоту воздуха и здоровье.",
+          "techPoints": [
+            "Многоступенчатая фильтрация очищает выхлоп",
+            "Снижает запах в цехе",
+            "Подходит для цехов печати"
+          ]
+        },
+        "es": {
+          "name": "Purificador de aire",
+          "tech": "La filtración multietapa limpia los gases y olores generados durante la impresión y el curado, manteniendo el aire del taller limpio y protegiendo la salud.",
+          "techPoints": [
+            "Filtración multietapa purifica los gases",
+            "Reduce los olores del taller",
+            "Adecuado para talleres de impresión"
+          ]
+        }
+      }
     },
     {
       "id": "水晶标打印机",
@@ -2413,7 +2605,18 @@ window.PRODUCT_DATA = {
               "value": "Smart acrylic outlook, touch screen control ,aviation-grade box package  \nRecommend  1*Epson DX7 head  speed 1 m2/h \nOr 1*Epson 3200U1 head  speed 2.1 m2/h"
             }
           ],
-          "id": "水晶标打印机_p0"
+          "id": "水晶标打印机_p0",
+          "i18n": {
+            "ru": {
+              "feature": "Акриловый корпус, сенсорное управление, авиационная упаковка. Рекомендуется: 1 головка Epson DX7 (1 м²/ч) или 1 Epson 3200U1 (2,1 м²/ч)"
+            },
+            "es": {
+              "feature": "Carcasa acrílica, control táctil, embalaje de grado aeronáutico. Recomendado: 1 cabezal Epson DX7 (1 m²/h) o 1 Epson 3200U1 (2,1 m²/h)"
+            },
+            "en": {
+              "feature": "Recommend  1*Epson DX7 head  speed 1 m2/h"
+            }
+          }
         },
         {
           "model": "水晶标打印机UV-A3B A3 UV DTF Printer",
@@ -2525,7 +2728,18 @@ window.PRODUCT_DATA = {
               "value": "Best THK rail+ Leadshine motor combo+Auto ink shortage alarm, high cost-effectiveness\nRecommend  1*Epson DX7 head  speed 1 m2/h \nOr 1*Epson 3200U1 head  speed 2.1 m2/h"
             }
           ],
-          "id": "水晶标打印机_p1"
+          "id": "水晶标打印机_p1",
+          "i18n": {
+            "ru": {
+              "feature": "Лучшие рельсы THK + мотор Leadshine + автосигнал о нехватке чернил, высокая эффективность. Рекомендуется: 1 DX7 (1 м²/ч) или 1 Epson 3200U1 (2,1 м²/ч)"
+            },
+            "es": {
+              "feature": "Mejor combinación riel THK + motor Leadshine + alarma automática de tinta, gran rentabilidad. Recomendado: 1 DX7 (1 m²/h) o 1 Epson 3200U1 (2,1 m²/h)"
+            },
+            "en": {
+              "feature": "Recommend  1*Epson DX7 head  speed 1 m2/h"
+            }
+          }
         }
       ],
       "tech": "采用 UV 固化墨水在专用底膜上打印，制作免制版、可随意粘贴的立体水晶标，广泛应用于礼品、包装装饰。",
@@ -2534,7 +2748,35 @@ window.PRODUCT_DATA = {
         "免制版水晶标工艺",
         "适用礼品 / 包装装饰"
       ],
-      "image": "assets/images/ID_5E679830E46A4740B95E337D7F4F6144.jpg"
+      "image": "assets/images/ID_5E679830E46A4740B95E337D7F4F6144.jpg",
+      "i18n": {
+        "en": {
+          "tech": "Prints with UV-curable ink on a special base film to make plate-free, sticker-like 3D crystal labels, widely used for gifts and packaging decor.",
+          "techPoints": [
+            "UV ink instant curing",
+            "Plate-free crystal label process",
+            "For gifts / packaging decor"
+          ]
+        },
+        "ru": {
+          "name": "УФ DTF-принтер",
+          "tech": "Печатает УФ-отверждаемыми чернилами на спец. подложке, создавая объёмные наклейки-кристаллы без форм, для подарков и упаковки.",
+          "techPoints": [
+            "Мгновенное отверждение УФ-чернил",
+            "Безформатный процесс кристал. наклейки",
+            "Для подарков/упаковки"
+          ]
+        },
+        "es": {
+          "name": "Impresora UV DTF",
+          "tech": "Imprime con tinta de curado UV sobre un film base especial para crear etiquetas cristal 3D sin placa y pegables, usadas en regalos y decoración de envases.",
+          "techPoints": [
+            "Secado instantáneo de tinta UV",
+            "Proceso de etiqueta cristal sin placa",
+            "Para regalos / decoración de envases"
+          ]
+        }
+      }
     },
     {
       "id": "胸章机",
@@ -2580,7 +2822,15 @@ window.PRODUCT_DATA = {
               "value": "操作简单，易上手，安装方便，环保耐用（Simple operation, easy to use, easy to install, environmental protection and durable）"
             }
           ],
-          "id": "胸章机_p0"
+          "id": "胸章机_p0",
+          "i18n": {
+            "ru": {
+              "feature": "Простое управление, легко освоить, удобная установка, экологично и долговечно"
+            },
+            "es": {
+              "feature": "Operación simple, fácil de usar, instalación cómoda, ecológico y duradero"
+            }
+          }
         },
         {
           "model": "Badge抽拉款塑料圆形胸章机",
@@ -2620,7 +2870,15 @@ window.PRODUCT_DATA = {
               "value": "操作简单，易上手，安装方便，环保耐用（Simple operation, easy to use, easy to install, environmental protection and durable）"
             }
           ],
-          "id": "胸章机_p1"
+          "id": "胸章机_p1",
+          "i18n": {
+            "ru": {
+              "feature": "Простое управление, легко освоить, удобная установка, экологично и долговечно"
+            },
+            "es": {
+              "feature": "Operación simple, fácil de usar, instalación cómoda, ecológico y duradero"
+            }
+          }
         },
         {
           "model": "Badge铝滑轨圆形胸章机",
@@ -2660,7 +2918,15 @@ window.PRODUCT_DATA = {
               "value": "操作简单，易上手，安装方便，环保耐用（Simple operation, easy to use, easy to install, environmental protection and durable）"
             }
           ],
-          "id": "胸章机_p2"
+          "id": "胸章机_p2",
+          "i18n": {
+            "ru": {
+              "feature": "Простое управление, легко освоить, удобная установка, экологично и долговечно"
+            },
+            "es": {
+              "feature": "Operación simple, fácil de usar, instalación cómoda, ecológico y duradero"
+            }
+          }
         },
         {
           "model": "Badge塑料滑轨圆形胸章机",
@@ -2700,7 +2966,15 @@ window.PRODUCT_DATA = {
               "value": "操作简单，易上手，安装方便，环保耐用（Simple operation, easy to use, easy to install, environmental protection and durable）"
             }
           ],
-          "id": "胸章机_p3"
+          "id": "胸章机_p3",
+          "i18n": {
+            "ru": {
+              "feature": "Простое управление, легко освоить, удобная установка, экологично и долговечно"
+            },
+            "es": {
+              "feature": "Operación simple, fácil de usar, instalación cómoda, ecológico y duradero"
+            }
+          }
         },
         {
           "model": "Badge旋转款塑料圆形胸章机",
@@ -2740,7 +3014,15 @@ window.PRODUCT_DATA = {
               "value": "操作简单，易上手，安装方便，环保耐用（Simple operation, easy to use, easy to install, environmental protection and durable）"
             }
           ],
-          "id": "胸章机_p4"
+          "id": "胸章机_p4",
+          "i18n": {
+            "ru": {
+              "feature": "Простое управление, легко освоить, удобная установка, экологично и долговечно"
+            },
+            "es": {
+              "feature": "Operación simple, fácil de usar, instalación cómoda, ecológico y duradero"
+            }
+          }
         }
       ],
       "tech": "通过模具冲压将图案压制成个性化胸章、钥匙扣等，操作简单，适合文创、活动定制与小批量生产。",
@@ -2749,7 +3031,35 @@ window.PRODUCT_DATA = {
         "支持多种尺寸规格",
         "文创 / 活动定制利器"
       ],
-      "image": "assets/images/ID_89D4059F33254F1196834D01EA88FC3D.jpg"
+      "image": "assets/images/ID_89D4059F33254F1196834D01EA88FC3D.jpg",
+      "i18n": {
+        "en": {
+          "tech": "Dies press designs into personalized badges, keychains, etc.; simple to operate, ideal for crafts, events and small batches.",
+          "techPoints": [
+            "Die stamping forming",
+            "Multiple sizes supported",
+            "Ideal for crafts / events"
+          ]
+        },
+        "ru": {
+          "name": "Машина для значков",
+          "tech": "Штамповкой превращает дизайн в значки, брелоки и пр.; просто, идеально для сувениров, мероприятий, мелких партий.",
+          "techPoints": [
+            "Штамповка пресс-формой",
+            "Поддержка разных размеров",
+            "Идеал для сувениров/мероприятий"
+          ]
+        },
+        "es": {
+          "name": "Máquina de chapas",
+          "tech": "Troquela diseños en chapas y llaveros personalizados; fácil de usar, ideal para manualidades, eventos y pequeñas series.",
+          "techPoints": [
+            "Troquelado con molde",
+            "Varios tamaños admitidos",
+            "Ideal para manualidades/eventos"
+          ]
+        }
+      }
     },
     {
       "id": "熨斗",
@@ -2835,7 +3145,15 @@ window.PRODUCT_DATA = {
               "value": "1.静置不动，10分自动关机\n2.三档调整快速升温\n3.轻便小巧易携带，适合家居\n4.应用范围广，主要应用于棉、麻、化纤等织物的烫画，也可通过丝\n印、胶水、发泡等方式进行热处理。"
             }
           ],
-          "id": "熨斗_p0"
+          "id": "熨斗_p0",
+          "i18n": {
+            "ru": {
+              "feature": "1. Автоотключение через 10 мин простоя\n2. Трёхступенчатый быстрый нагрев\n3. Лёгкий, компактный, для дома\n4. Широкий диапазон: хлопок, лён, синтетика; также термообработка шёлкографией, клеем, вспенкой"
+            },
+            "es": {
+              "feature": "1. Apagado automático tras 10 min en reposo\n2. Calentamiento rápido en 3 niveles\n3. Ligero y portátil, para el hogar\n4. Amplio uso: algodón, lino, sintéticos; también tratamiento térmico con serigrafía, pegamento, espuma"
+            }
+          }
         },
         {
           "model": "AUP-L熨斗",
@@ -2915,7 +3233,15 @@ window.PRODUCT_DATA = {
               "value": "1.静置不动，10分自动关机\n2.可切换摄氏度和华氏度\n3.最高温度205摄氏度\n4.压烫倒计时功能\n5.U型发热管，温度更均匀\n6.轻便小巧易携带，适合家居\n7.应用范围广，主要应用于棉、麻、化纤等织物的烫画，也可通过丝\n印、胶水、发泡等方式进行热处理。"
             }
           ],
-          "id": "熨斗_p1"
+          "id": "熨斗_p1",
+          "i18n": {
+            "ru": {
+              "feature": "1. Автоотключение через 10 мин\n2. Переключение °C/°F\n3. Макс. 205 °C\n4. Обратный отсчёт прессования\n5. U-образная трубка, ровнее нагрев\n6. Лёгкий, для дома\n7. Широкий диапазон тканей"
+            },
+            "es": {
+              "feature": "1. Apagado auto tras 10 min\n2. Conmuta °C/°F\n3. Máx. 205 °C\n4. Cuenta atrás de prensado\n5. Tubo en U, calor más uniforme\n6. Ligero, para hogar\n7. Amplio rango de telas"
+            }
+          }
         },
         {
           "model": "AUP-T 熨斗",
@@ -2995,7 +3321,15 @@ window.PRODUCT_DATA = {
               "value": "1-开模一体式机壳，美观便携\n2-智能触屏数控表，精确读数，简单方便\n3-共震施压，无需手压，解放双手\n4.应用范围广，主要应用于棉、麻、化纤等织物的烫画，也可通过丝\n印、胶水、发泡等方式进行热处理。"
             }
           ],
-          "id": "熨斗_p2"
+          "id": "熨斗_p2",
+          "i18n": {
+            "ru": {
+              "feature": "1. Корпус литьевой цельный, красивый и портативный\n2. Умная сенсорная панель, точные показания\n3. Вибропрессование, руки свободны\n4. Широкий диапазон тканей"
+            },
+            "es": {
+              "feature": "1. Carcasa monolítica moldeada, portátil y elegante\n2. Panel táctil inteligente, lectura precisa\n3. Presión por vibración, manos libres\n4. Amplio rango de telas"
+            }
+          }
         },
         {
           "model": "12寸熨斗",
@@ -3075,7 +3409,15 @@ window.PRODUCT_DATA = {
               "value": "1.开模一体式机壳，美观便携\n2.静置不动，10分自动关机\n   3.可切换摄氏度和华氏度\n4.应用范围广，主要应用于棉、麻、化纤等织物的烫画，也可通过丝\n印、胶水、发泡等方式进行热处理。"
             }
           ],
-          "id": "熨斗_p3"
+          "id": "熨斗_p3",
+          "i18n": {
+            "ru": {
+              "feature": "1. Автоотключение через 10 мин\n2. Переключение °C/°F\n3. Макс. 205 °C\n4. Обратный отсчёт прессования\n5. U-образная трубка, ровнее нагрев\n6. Лёгкий, для дома\n7. Широкий диапазон тканей"
+            },
+            "es": {
+              "feature": "1. Apagado auto tras 10 min\n2. Conmuta °C/°F\n3. Máx. 205 °C\n4. Cuenta atrás de prensado\n5. Tubo en U, calor más uniforme\n6. Ligero, para hogar\n7. Amplio rango de telas"
+            }
+          }
         },
         {
           "model": "C08 7.5寸熨斗",
@@ -3155,7 +3497,15 @@ window.PRODUCT_DATA = {
               "value": "1.ID设计灵感来自于专业插画师设计；\n2.多重隔热安全温度保护；\n3.图案采用移印工艺，美观高大上；\n4.发热铝板采用铁氟龙烤漆工艺，耐高温，不粘织物；\n5.配备多种图案选择，满足不同客户审美\n6.外观新颖，识别度高；"
             }
           ],
-          "id": "熨斗_p4"
+          "id": "熨斗_p4",
+          "i18n": {
+            "ru": {
+              "feature": "1. ID-дизайн от иллюстратора\n2. Многослойная теплозащита\n3. Рисунок тампопечатью, премиальный вид\n4. Плита с покрытием PTFE, жаростойкая, не липнет\n5. Разные рисунки на выбор\n6. Новый дизайн, узнаваемый"
+            },
+            "es": {
+              "feature": "1. Diseño ID de ilustrador\n2. Protección térmica multicapa\n3. Motivo por tampografía, aspecto premium\n4. Placa de aluminio con pintura PTFE, resistente, antiadherente\n5. Varios motivos a elegir\n6. Diseño novedoso, distinguible"
+            }
+          }
         }
       ],
       "tech": "用于热转印时的加压熨烫，将图案牢固转印到服饰面料，是 DTF / 烫画工艺的终端工具，服饰面料通用。",
@@ -3164,7 +3514,35 @@ window.PRODUCT_DATA = {
         "适配 DTF / 烫画",
         "服饰面料通用"
       ],
-      "image": "assets/images/ID_86F1F82BAFE04643846326A4EA59C426.jpg"
+      "image": "assets/images/ID_86F1F82BAFE04643846326A4EA59C426.jpg",
+      "i18n": {
+        "en": {
+          "tech": "Used for pressure ironing in heat transfer, firmly transferring designs onto garment fabric — the final tool for DTF / heat-transfer, universal for fabrics.",
+          "techPoints": [
+            "Pressure heat transfer",
+            "For DTF / heat transfer",
+            "Universal for garments"
+          ]
+        },
+        "ru": {
+          "name": "Термопресс",
+          "tech": "Применяется для термопрессовки при переносе, прочно переносит рисунок на ткань — финальный инструмент DTF/термопереноса, универсально.",
+          "techPoints": [
+            "Термоперенос под давлением",
+            "Для DTF/термопереноса",
+            "Универсально для тканей"
+          ]
+        },
+        "es": {
+          "name": "Prensa térmica",
+          "tech": "Se usa para planchado a presión en la transferencia térmica, fijando el diseño en la prenda: la herramienta final del proceso DTF, universal para telas.",
+          "techPoints": [
+            "Transferencia térmica con presión",
+            "Para DTF / sublimación",
+            "Universal para prendas"
+          ]
+        }
+      }
     },
     {
       "id": "白墨摇墨机",
@@ -3214,7 +3592,18 @@ window.PRODUCT_DATA = {
               "value": "防止白墨沉淀 打印更流畅\nPrevents white ink from settling and prints more smoothly"
             }
           ],
-          "id": "白墨摇墨机_p0"
+          "id": "白墨摇墨机_p0",
+          "i18n": {
+            "ru": {
+              "feature": "Предотвращает осадок белых чернил, печать плавнее"
+            },
+            "es": {
+              "feature": "Evita el sedimento de tinta blanca, impresión más fluida"
+            },
+            "en": {
+              "feature": "Prevents white ink from settling and prints more smoothly"
+            }
+          }
         },
         {
           "model": "白墨摇墨机B",
@@ -3258,7 +3647,18 @@ window.PRODUCT_DATA = {
               "value": "防止白墨沉淀 打印更流畅\nPrevents white ink from settling and prints more smoothly"
             }
           ],
-          "id": "白墨摇墨机_p1"
+          "id": "白墨摇墨机_p1",
+          "i18n": {
+            "ru": {
+              "feature": "Предотвращает осадок белых чернил, печать плавнее"
+            },
+            "es": {
+              "feature": "Evita el sedimento de tinta blanca, impresión más fluida"
+            },
+            "en": {
+              "feature": "Prevents white ink from settling and prints more smoothly"
+            }
+          }
         }
       ],
       "tech": "持续搅动白墨防止沉淀，保证 DTF 打印白墨浓度均匀、不断墨，延长喷头与墨水寿命。",
@@ -3267,7 +3667,35 @@ window.PRODUCT_DATA = {
         "白墨浓度更均匀",
         "保护喷头延长寿命"
       ],
-      "image": "assets/images/ID_8F51FE4D4BB84B94B0A42353F61D70F9.jpg"
+      "image": "assets/images/ID_8F51FE4D4BB84B94B0A42353F61D70F9.jpg",
+      "i18n": {
+        "en": {
+          "tech": "Continuously agitates white ink to prevent settling, keeping DTF white-ink density even and flow uninterrupted, extending head and ink life.",
+          "techPoints": [
+            "Continuous agitation prevents settling",
+            "More even white ink density",
+            "Protects heads, extends life"
+          ]
+        },
+        "ru": {
+          "name": "Смеситель белых чернил",
+          "tech": "Постоянно перемешивает белые чернила во избежание осадка, поддерживая ровную плотность и подачу, продлевая срок головок и чернил.",
+          "techPoints": [
+            "Постоянное перемешивание без осадка",
+            "Ровнее плотность белых чернил",
+            "Защищает головки, продлевает срок"
+          ]
+        },
+        "es": {
+          "name": "Agitador de tinta blanca",
+          "tech": "Agita continuamente la tinta blanca para evitar sedimentación, manteniendo densidad uniforme y flujo continuo, alargando la vida de cabezales y tinta.",
+          "techPoints": [
+            "Agitación continua evita sedimentación",
+            "Densidad más uniforme de tinta blanca",
+            "Protege cabezales, alarga vida"
+          ]
+        }
+      }
     },
     {
       "id": "热升华",
@@ -3369,7 +3797,18 @@ window.PRODUCT_DATA = {
               "value": "新手入门款，成本低，体积小，建议打印数量10-80张/天的客户\nBeginner's entry-level model with low cost and small size, recommended for customers with a printing quantity of 10-80 sheets per day"
             }
           ],
-          "id": "热升华_p0"
+          "id": "热升华_p0",
+          "i18n": {
+            "ru": {
+              "feature": "Базовая модель для новичков: низкая цена, компактная, для клиентов с объёмом печати 10–80 листов/день"
+            },
+            "es": {
+              "feature": "Modelo de iniciación: bajo coste, tamaño pequeño, para clientes con 10–80 hojas/día"
+            },
+            "en": {
+              "feature": "Beginner's entry-level model with low cost and small size, recommended for customers with a printing quantity of 10-80 sheets per day"
+            }
+          }
         }
       ],
       "tech": "利用升华墨水在高温下气化渗入化纤面料或涂层介质，呈现色彩鲜艳、耐洗的转印效果，适合运动服饰、礼品。",
@@ -3378,7 +3817,35 @@ window.PRODUCT_DATA = {
         "色彩鲜艳耐水洗",
         "适配化纤 / 涂层介质"
       ],
-      "image": "assets/images/ID_458AE7FF4F2144F09B949D0807F5A0D5.jpg"
+      "image": "assets/images/ID_458AE7FF4F2144F09B949D0807F5A0D5.jpg",
+      "i18n": {
+        "en": {
+          "tech": "Uses sublimation ink that vaporizes at high temperature and penetrates polyester or coated media, giving vivid, wash-resistant transfers — ideal for sportswear and gifts.",
+          "techPoints": [
+            "Sublimation ink transfers at high temp",
+            "Vivid colors, wash-resistant",
+            "For polyester / coated media"
+          ]
+        },
+        "ru": {
+          "name": "Сублимационный принтер",
+          "tech": "Использует сублимационные чернила, испаряющиеся при нагреве и проникающие в полиэстер/покрытие, давая яркий стойкий перенос — для спорт. одежды, подарков.",
+          "techPoints": [
+            "Сублимац. чернила перенос при нагреве",
+            "Яркие цвета, стойкие к стирке",
+            "Для полиэстера/покрытых носителей"
+          ]
+        },
+        "es": {
+          "name": "Impresora de sublimación",
+          "tech": "Usa tinta de sublimación que se volatiliza con el calor y penetra en poliéster o sustratos con recubrimiento, logrando transferencias vivas y resistentes al lavado: ideal para ropa deportiva y regalos.",
+          "techPoints": [
+            "Tinta de sublimación transfiere a alta temp.",
+            "Colores vivos, resistentes al lavado",
+            "Para poliéster / sustratos con recubrimiento"
+          ]
+        }
+      }
     },
     {
       "id": "写真机",
@@ -3484,7 +3951,15 @@ window.PRODUCT_DATA = {
               "value": "●喷头：日本爱普生DX5、DX7、XP600、3200、1600 喷头\n●电机：雷赛伺服电机驱动，质量保证，打图精高，运行平稳\n●导轨：台湾上银无声直线导轨，精度高，静音\n●清洗：升降清洗墨栈，清洗一步到位\n●收放纸：标配前收后放纸器\n●烘干：平台前后两段加热，外置上下双重风干系统，充分满足高速打印\n●外观：工业设计的重型机架，运行更平稳，左右翻盖，维护更方便\n●传输：网线打印接口"
             }
           ],
-          "id": "写真机_p0"
+          "id": "写真机_p0",
+          "i18n": {
+            "ru": {
+              "feature": "● Головка: японские Epson DX5/DX7/XP600/3200/1600\n● Мотор: серво Leadshine, стабильно\n● Рельс: тихий линейный Тайвань HIWIN\n● Очистка: подъёмная капля, точно\n● Подача: передняя подача/задняя смотка\n● Сушка: двухзонный нагрев + двойной обдув\n● Корпус: тяжёлый пром. каркас, откидные крышки\n● Передача: сетевой интерфейс"
+            },
+            "es": {
+              "feature": "● Cabezal: Epson DX5/DX7/XP600/3200/1600 japonés\n● Motor: servo Leadshine, estable\n● Riel: lineal silencioso Taiwan HIWIN\n● Limpieza: estación elevable, precisa\n● Alimentación: devanado frontal/trasero\n● Secado: doble zona + doble soplado\n● Carcasa: bastidor industrial pesado, tapas abatibles\n● Transmisión: interfaz de red"
+            }
+          }
         },
         {
           "model": "TC-1600I",
@@ -3584,7 +4059,15 @@ window.PRODUCT_DATA = {
               "value": "●喷头：日本爱普生DX5、DX7、XP600、3200、1600 喷头\n●电机：雷赛伺服电机驱动，质量保证，打图精高，运行平稳\n●导轨：台湾上银无声直线导轨，精度高，静音\n●清洗：升降清洗墨栈，清洗一步到位\n●收放纸：标配前收后放纸器\n●烘干：平台前后两段加热，外置上下双重风干系统，充分满足高速打印\n●外观：工业设计的重型机架，运行更平稳，左右翻盖，维护更方便\n●传输：网线打印接口"
             }
           ],
-          "id": "写真机_p1"
+          "id": "写真机_p1",
+          "i18n": {
+            "ru": {
+              "feature": "● Головка: японские Epson DX5/DX7/XP600/3200/1600\n● Мотор: серво Leadshine, стабильно\n● Рельс: тихий линейный Тайвань HIWIN\n● Очистка: подъёмная капля, точно\n● Подача: передняя подача/задняя смотка\n● Сушка: двухзонный нагрев + двойной обдув\n● Корпус: тяжёлый пром. каркас, откидные крышки\n● Передача: сетевой интерфейс"
+            },
+            "es": {
+              "feature": "● Cabezal: Epson DX5/DX7/XP600/3200/1600 japonés\n● Motor: servo Leadshine, estable\n● Riel: lineal silencioso Taiwan HIWIN\n● Limpieza: estación elevable, precisa\n● Alimentación: devanado frontal/trasero\n● Secado: doble zona + doble soplado\n● Carcasa: bastidor industrial pesado, tapas abatibles\n● Transmisión: interfaz de red"
+            }
+          }
         },
         {
           "model": "TC-1800",
@@ -3684,7 +4167,15 @@ window.PRODUCT_DATA = {
               "value": "●喷头：日本爱普生DX5、DX7、XP600、3200、XC90 喷头\n●电机：雷赛伺服电机驱动，质量保证，打图精高，运行平稳\n●导轨：台湾上银无声直线导轨，精度高，静音\n●清洗：升降清洗墨栈，清洗一步到位\n●收放纸：标配前收后放纸器\n●烘干：平台前后两段加热，外置上下双重风干系统，充分满足高速打印\n●外观：工业设计的重型机架，运行更平稳，左右翻盖，维护更方便\n●传输：网线打印接口"
             }
           ],
-          "id": "写真机_p2"
+          "id": "写真机_p2",
+          "i18n": {
+            "ru": {
+              "feature": "● Головка: японские Epson DX5/DX7/XP600/3200/1600\n● Мотор: серво Leadshine, стабильно\n● Рельс: тихий линейный Тайвань HIWIN\n● Очистка: подъёмная капля, точно\n● Подача: передняя подача/задняя смотка\n● Сушка: двухзонный нагрев + двойной обдув\n● Корпус: тяжёлый пром. каркас, откидные крышки\n● Передача: сетевой интерфейс"
+            },
+            "es": {
+              "feature": "● Cabezal: Epson DX5/DX7/XP600/3200/1600 japonés\n● Motor: servo Leadshine, estable\n● Riel: lineal silencioso Taiwan HIWIN\n● Limpieza: estación elevable, precisa\n● Alimentación: devanado frontal/trasero\n● Secado: doble zona + doble soplado\n● Carcasa: bastidor industrial pesado, tapas abatibles\n● Transmisión: interfaz de red"
+            }
+          }
         },
         {
           "model": "TC-702",
@@ -3784,7 +4275,15 @@ window.PRODUCT_DATA = {
               "value": "●喷头：日本爱普生DX5、DX7、XP600、3200、XC90 喷头\n●电机：雷赛伺服电机驱动，质量保证，打图精高，运行平稳\n●导轨：台湾上银无声直线导轨，精度高，静音\n●清洗：升降清洗墨栈，清洗一步到位\n●收放纸：标配前收后放纸器\n●烘干：平台前后两段加热，外置上下双重风干系统，充分满足高速打印\n●外观：工业设计的重型机架，运行更平稳，左右翻盖，维护更方便\n●传输：网线打印接口"
             }
           ],
-          "id": "写真机_p3"
+          "id": "写真机_p3",
+          "i18n": {
+            "ru": {
+              "feature": "● Головка: японские Epson DX5/DX7/XP600/3200/1600\n● Мотор: серво Leadshine, стабильно\n● Рельс: тихий линейный Тайвань HIWIN\n● Очистка: подъёмная капля, точно\n● Подача: передняя подача/задняя смотка\n● Сушка: двухзонный нагрев + двойной обдув\n● Корпус: тяжёлый пром. каркас, откидные крышки\n● Передача: сетевой интерфейс"
+            },
+            "es": {
+              "feature": "● Cabezal: Epson DX5/DX7/XP600/3200/1600 japonés\n● Motor: servo Leadshine, estable\n● Riel: lineal silencioso Taiwan HIWIN\n● Limpieza: estación elevable, precisa\n● Alimentación: devanado frontal/trasero\n● Secado: doble zona + doble soplado\n● Carcasa: bastidor industrial pesado, tapas abatibles\n● Transmisión: interfaz de red"
+            }
+          }
         },
         {
           "model": "TC-1603II",
@@ -3884,7 +4383,15 @@ window.PRODUCT_DATA = {
               "value": "●喷头：日本爱普生DX5、DX7、XP600、3200、1600 喷头\n●电机：雷赛伺服电机驱动，质量保证，打图精高，运行平稳\n●导轨：台湾上银无声直线导轨，精度高，静音\n●清洗：升降清洗墨栈，清洗一步到位\n●收放纸：标配前收后放纸器\n●烘干：平台前后两段加热，外置上下双重风干系统，充分满足高速打印\n●外观：工业设计的重型机架，运行更平稳，左右翻盖，维护更方便\n●传输：网线打印接口"
             }
           ],
-          "id": "写真机_p4"
+          "id": "写真机_p4",
+          "i18n": {
+            "ru": {
+              "feature": "● Головка: японские Epson DX5/DX7/XP600/3200/1600\n● Мотор: серво Leadshine, стабильно\n● Рельс: тихий линейный Тайвань HIWIN\n● Очистка: подъёмная капля, точно\n● Подача: передняя подача/задняя смотка\n● Сушка: двухзонный нагрев + двойной обдув\n● Корпус: тяжёлый пром. каркас, откидные крышки\n● Передача: сетевой интерфейс"
+            },
+            "es": {
+              "feature": "● Cabezal: Epson DX5/DX7/XP600/3200/1600 japonés\n● Motor: servo Leadshine, estable\n● Riel: lineal silencioso Taiwan HIWIN\n● Limpieza: estación elevable, precisa\n● Alimentación: devanado frontal/trasero\n● Secado: doble zona + doble soplado\n● Carcasa: bastidor industrial pesado, tapas abatibles\n● Transmisión: interfaz de red"
+            }
+          }
         },
         {
           "model": "TC-2500",
@@ -3984,7 +4491,15 @@ window.PRODUCT_DATA = {
               "value": "●喷头：日本爱普生DX5、DX7、XP600、3200、XC90 喷头\n●电机：雷赛伺服电机驱动，质量保证，打图精高，运行平稳\n●导轨：台湾上银无声直线导轨，精度高，静音\n●清洗：升降清洗墨栈，清洗一步到位\n●收放纸：标配前收后放纸器\n●烘干：平台前后两段加热，外置上下双重风干系统，充分满足高速打印\n●外观：工业设计的重型机架，运行更平稳，左右翻盖，维护更方便\n●传输：网线打印接口"
             }
           ],
-          "id": "写真机_p5"
+          "id": "写真机_p5",
+          "i18n": {
+            "ru": {
+              "feature": "● Головка: японские Epson DX5/DX7/XP600/3200/1600\n● Мотор: серво Leadshine, стабильно\n● Рельс: тихий линейный Тайвань HIWIN\n● Очистка: подъёмная капля, точно\n● Подача: передняя подача/задняя смотка\n● Сушка: двухзонный нагрев + двойной обдув\n● Корпус: тяжёлый пром. каркас, откидные крышки\n● Передача: сетевой интерфейс"
+            },
+            "es": {
+              "feature": "● Cabezal: Epson DX5/DX7/XP600/3200/1600 japonés\n● Motor: servo Leadshine, estable\n● Riel: lineal silencioso Taiwan HIWIN\n● Limpieza: estación elevable, precisa\n● Alimentación: devanado frontal/trasero\n● Secado: doble zona + doble soplado\n● Carcasa: bastidor industrial pesado, tapas abatibles\n● Transmisión: interfaz de red"
+            }
+          }
         },
         {
           "model": "TC-3200",
@@ -4084,7 +4599,15 @@ window.PRODUCT_DATA = {
               "value": "●喷头：日本爱普生DX5、DX7、XP600、3200、XC90 喷头\n●电机：雷赛伺服电机驱动，质量保证，打图精高，运行平稳\n●导轨：台湾上银无声直线导轨，精度高，静音\n●清洗：升降清洗墨栈，清洗一步到位\n●收放纸：标配前收后放纸器\n●烘干：平台前后两段加热，外置上下双重风干系统，充分满足高速打印\n●外观：工业设计的重型机架，运行更平稳，左右翻盖，维护更方便\n●传输：网线打印接口"
             }
           ],
-          "id": "写真机_p6"
+          "id": "写真机_p6",
+          "i18n": {
+            "ru": {
+              "feature": "● Головка: японские Epson DX5/DX7/XP600/3200/1600\n● Мотор: серво Leadshine, стабильно\n● Рельс: тихий линейный Тайвань HIWIN\n● Очистка: подъёмная капля, точно\n● Подача: передняя подача/задняя смотка\n● Сушка: двухзонный нагрев + двойной обдув\n● Корпус: тяжёлый пром. каркас, откидные крышки\n● Передача: сетевой интерфейс"
+            },
+            "es": {
+              "feature": "● Cabezal: Epson DX5/DX7/XP600/3200/1600 japonés\n● Motor: servo Leadshine, estable\n● Riel: lineal silencioso Taiwan HIWIN\n● Limpieza: estación elevable, precisa\n● Alimentación: devanado frontal/trasero\n● Secado: doble zona + doble soplado\n● Carcasa: bastidor industrial pesado, tapas abatibles\n● Transmisión: interfaz de red"
+            }
+          }
         },
         {
           "model": "UV-1600",
@@ -4184,7 +4707,15 @@ window.PRODUCT_DATA = {
               "value": "●喷头：日本爱普生DX5、DX7、XP600、3200、XC90 喷头\n●电机：雷赛伺服电机驱动，质量保证，打图精高，运行平稳\n●导轨：台湾上银无声直线导轨，精度高，静音\n●清洗：升降清洗墨栈，清洗一步到位\n●收放纸：标配前收后放纸器\n●烘干：平台前后两段加热，外置上下双重风干系统，充分满足高速打印\n●外观：工业设计的重型机架，运行更平稳，左右翻盖，维护更方便\n●传输：网线打印接口"
             }
           ],
-          "id": "写真机_p7"
+          "id": "写真机_p7",
+          "i18n": {
+            "ru": {
+              "feature": "● Головка: японские Epson DX5/DX7/XP600/3200/1600\n● Мотор: серво Leadshine, стабильно\n● Рельс: тихий линейный Тайвань HIWIN\n● Очистка: подъёмная капля, точно\n● Подача: передняя подача/задняя смотка\n● Сушка: двухзонный нагрев + двойной обдув\n● Корпус: тяжёлый пром. каркас, откидные крышки\n● Передача: сетевой интерфейс"
+            },
+            "es": {
+              "feature": "● Cabezal: Epson DX5/DX7/XP600/3200/1600 japonés\n● Motor: servo Leadshine, estable\n● Riel: lineal silencioso Taiwan HIWIN\n● Limpieza: estación elevable, precisa\n● Alimentación: devanado frontal/trasero\n● Secado: doble zona + doble soplado\n● Carcasa: bastidor industrial pesado, tapas abatibles\n● Transmisión: interfaz de red"
+            }
+          }
         }
       ],
       "tech": "大幅面高精度喷绘设备，采用溶剂 / 弱溶剂 / 水性墨水，广泛应用于广告喷绘、展架、车身贴等户外场景。",
@@ -4193,7 +4724,35 @@ window.PRODUCT_DATA = {
         "溶剂 / 弱溶剂墨水",
         "广告展陈广泛应用"
       ],
-      "image": "assets/images/ID_FCF6F62A3E4D45F3B98B15036AE08FFC.jpg"
+      "image": "assets/images/ID_FCF6F62A3E4D45F3B98B15036AE08FFC.jpg",
+      "i18n": {
+        "en": {
+          "tech": "Large-format high-precision printers using solvent / eco-solvent / aqueous ink, widely used for outdoor signage, displays, vehicle wraps, etc.",
+          "techPoints": [
+            "Large-format high-precision printing",
+            "Solvent / eco-solvent ink",
+            "Widely used in signage"
+          ]
+        },
+        "ru": {
+          "name": "Широкоформатный принтер",
+          "tech": "Широкоформатные высокоточные плоттеры на растворителе/эко-растворителе/воде, для наружной рекламы, стендов, оклейки авто.",
+          "techPoints": [
+            "Широкоформ. высокоточная печать",
+            "Растворитель/эко-растворитель",
+            "Широко для рекламы"
+          ]
+        },
+        "es": {
+          "name": "Impresora de gran formato",
+          "tech": "Impresoras de gran formato de alta precisión con tinta solvente / eco-solvente / acuosa, usadas en cartelería exterior, exhibidores, vinilos para vehículos.",
+          "techPoints": [
+            "Impresión de gran formato de alta precisión",
+            "Tinta solvente / eco-solvente",
+            "Amplio uso en cartelería"
+          ]
+        }
+      }
     }
   ],
   "totalProducts": 53
